@@ -185,66 +185,66 @@ MІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ
 	Під час виконання лабораторної роботи я ознайомилась із командою tar, яка використовується в операційній системі Linux для архівації та розпакування файлів і каталогів.
 
 	Спочатку я підготувала необхідні файли та каталог для подальшої роботи. Для цього у терміналі створила два текстові файли file1.txt та file2.txt, а також каталог my\_folder за допомогою команд:
-
+```
 touch file1.txt file2.txt
-
+```
 mkdir my\_folder
 
 <img width="643" height="74" alt="image" src="https://github.com/user-attachments/assets/e44cb58d-138a-427d-8bbe-c0a8d3a0b7de" />
 
 
 Після цього я створила архівний файл з розширенням .tar, який містить один файл. Для цього використала команду:
-
+```
 tar \-cvf archive1.tar file1.txt
-
+```
 У результаті було створено архів archive1.tar, що містить файл file1.txt
 <img width="681" height="60" alt="image" src="https://github.com/user-attachments/assets/db700612-d431-4ec4-b9a7-8eb23b154a5b" />
 
 
 Далі я створила архів .tar, який одночасно містить декілька файлів і каталог. Для цього виконала команду:
-
+```
 tar \-cvf archive2.tar file1.txt file2.txt my\_folder/
-
+````
 У результаті архів archive2.tar містить файли file1.txt, file2.txt та каталог my\_folder.  
 <img width="748" height="122" alt="image" src="https://github.com/user-attachments/assets/26c24e27-6e7c-4d0f-b40b-95142a082cd5" />
 
 
 Потім я переглянула вміст створеного архіву без його розпакування за допомогою команди:
-
+``````
 tar \-tvf archive2.tar
-
+````````
 У виведеному списку відобразились усі файли та каталог, що входять до архіву.  
  <img width="669" height="103" alt="image" src="https://github.com/user-attachments/assets/7df156c9-d9a7-4b10-b44f-151eff5f08d9" />
 
 
 Наступним кроком я виконала розпакування архіву .tar за допомогою команди:
-
+````````
 tar \-xvf archive2.tar
-
+````````
 У результаті всі файли та каталог були витягнуті в поточну директорію.  
 <img width="564" height="101" alt="image" src="https://github.com/user-attachments/assets/6883c68a-55b8-4ec2-a37f-5c5c875ed63e" />
 
 
 Далі я створила архівний файл, стиснений за допомогою алгоритму bzip2:
-
+```
 tar \-cvjf archive3.tar.bz2 file1.txt
-
+```
 Було створено архів archive3.tar.bz2, який займає менше місця завдяки стисненню.  
 <img width="726" height="50" alt="image" src="https://github.com/user-attachments/assets/17997255-3ee2-4740-8c55-68c02fbaeaba" />
 
 
 Після цього я виконала розпакування архіву .tar.bz2:
-
+```````
 tar \-xvjf archive3.tar.bz2
-
+```````
 Файл file1.txt було успішно витягнуто з архіву.  
 <img width="613" height="51" alt="image" src="https://github.com/user-attachments/assets/f3f464b6-7ac7-4742-bd26-3fe7dd9ae16d" />
 
 
 На завершення я створила архів .tar, стиснений за допомогою алгоритму gzip:
-
+```
 tar \-cvzf archive4.tar.gz file1.txt
-
+`````
 Було створено архів archive4.tar.gz.  
 <img width="725" height="52" alt="image" src="https://github.com/user-attachments/assets/809b67e9-50c5-4a85-af79-b1879c1b47e5" />
 
