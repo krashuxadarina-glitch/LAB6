@@ -166,7 +166,8 @@ MІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ
 
 **Завдання 3:**
 
-![][image1]
+<img width="722" height="222" alt="image" src="https://github.com/user-attachments/assets/ad9bf519-db5c-49d2-b277-13816a7a4a26" />
+
 
 * Спочатку я спробувала створити архівний файл за допомогою команди tar \-cvf archive.tar fille1.txt, проте отримала повідомлення про помилку Cannot stat: No such file or directory.  
 * Я зрозуміла, що помилка виникла через відсутність вказаного файлу в моїй поточній директорії.  
@@ -189,148 +190,168 @@ touch file1.txt file2.txt
 
 mkdir my\_folder
 
-![][image2]
+<img width="643" height="74" alt="image" src="https://github.com/user-attachments/assets/e44cb58d-138a-427d-8bbe-c0a8d3a0b7de" />
+
 
 Після цього я створила архівний файл з розширенням .tar, який містить один файл. Для цього використала команду:
 
 tar \-cvf archive1.tar file1.txt
 
-У результаті було створено архів archive1.tar, що містить файл file1.txt![][image3]
+У результаті було створено архів archive1.tar, що містить файл file1.txt
+<img width="681" height="60" alt="image" src="https://github.com/user-attachments/assets/db700612-d431-4ec4-b9a7-8eb23b154a5b" />
+
 
 Далі я створила архів .tar, який одночасно містить декілька файлів і каталог. Для цього виконала команду:
 
 tar \-cvf archive2.tar file1.txt file2.txt my\_folder/
 
 У результаті архів archive2.tar містить файли file1.txt, file2.txt та каталог my\_folder.  
-![][image4]
+<img width="748" height="122" alt="image" src="https://github.com/user-attachments/assets/26c24e27-6e7c-4d0f-b40b-95142a082cd5" />
+
 
 Потім я переглянула вміст створеного архіву без його розпакування за допомогою команди:
 
 tar \-tvf archive2.tar
 
 У виведеному списку відобразились усі файли та каталог, що входять до архіву.  
- ![][image5]
+ <img width="669" height="103" alt="image" src="https://github.com/user-attachments/assets/7df156c9-d9a7-4b10-b44f-151eff5f08d9" />
+
 
 Наступним кроком я виконала розпакування архіву .tar за допомогою команди:
 
 tar \-xvf archive2.tar
 
 У результаті всі файли та каталог були витягнуті в поточну директорію.  
-![][image6]
+<img width="564" height="101" alt="image" src="https://github.com/user-attachments/assets/6883c68a-55b8-4ec2-a37f-5c5c875ed63e" />
+
 
 Далі я створила архівний файл, стиснений за допомогою алгоритму bzip2:
 
 tar \-cvjf archive3.tar.bz2 file1.txt
 
 Було створено архів archive3.tar.bz2, який займає менше місця завдяки стисненню.  
-![][image7]
+<img width="726" height="50" alt="image" src="https://github.com/user-attachments/assets/17997255-3ee2-4740-8c55-68c02fbaeaba" />
+
 
 Після цього я виконала розпакування архіву .tar.bz2:
 
 tar \-xvjf archive3.tar.bz2
 
 Файл file1.txt було успішно витягнуто з архіву.  
-![][image8]
+<img width="613" height="51" alt="image" src="https://github.com/user-attachments/assets/f3f464b6-7ac7-4742-bd26-3fe7dd9ae16d" />
+
 
 На завершення я створила архів .tar, стиснений за допомогою алгоритму gzip:
 
 tar \-cvzf archive4.tar.gz file1.txt
 
 Було створено архів archive4.tar.gz.  
-![][image9]
+<img width="725" height="52" alt="image" src="https://github.com/user-attachments/assets/809b67e9-50c5-4a85-af79-b1879c1b47e5" />
+
 
 Після цього я виконала його розпакування:
-
+```
 tar \-xvzf archive4.tar.gz
+```
 
 У результаті файл file1.txt був успішно витягнутий.  
-![][image10]
+<img width="607" height="63" alt="image" src="https://github.com/user-attachments/assets/1ee7a368-22aa-4f7b-81b1-001bf8d94a07" />
+
 
 **Завдання 4:**
 
 	Спочатку я створила тестовий файл для подальших перевірок за допомогою команди:
-
+```
 echo "Hello" \> test.txt
-
+```
 У результаті було створено файл test.txt.  
-![][image11]
+<img width="584" height="33" alt="image" src="https://github.com/user-attachments/assets/e8194e46-a1fa-4c5a-93e9-024a41b39df5" />
+
 
 Далі я виконала перенаправлення стандартного виводу (stdout) у файл:
-
+```
 ls 1\> out1.txt
-
+```
 Результат виконання команди ls був записаний у файл out1.txt.  
-![][image12]
+<img width="494" height="41" alt="image" src="https://github.com/user-attachments/assets/a6e2d27a-db32-4530-9242-eee255f907b6" />
+
 
 Аналогічно я використала скорочений запис:
-
+```
 ls \> out2.txt
-
+```
 Вивід також було перенаправлено у файл out2.txt.  
-![][image13]
+<img width="487" height="36" alt="image" src="https://github.com/user-attachments/assets/5f234020-f502-4443-88b9-15341af97911" />
 
 Для перенаправлення потоку помилок (stderr) я використала команду:
-
+```
 ls nonexistentfile 2\> error1.txt
-
+```
 Оскільки файл не існує, повідомлення про помилку було записано у файл error1.txt.  
- ![][image14]
+ <img width="700" height="43" alt="image" src="https://github.com/user-attachments/assets/7efa7c80-c0f4-4c74-b3ab-76d8bd245036" />
+
 
 Далі я виконала дописування результату в існуючий файл:
-
+```
 ls \>\> out2.txt
-
+```
 Нові дані були додані в кінець файлу без його перезапису.  
- ![][image15]
+<img width="483" height="31" alt="image" src="https://github.com/user-attachments/assets/e15a1adf-0e90-459b-8781-5048acf0526f" />
+
 
 Після цього я перенаправила одночасно стандартний вивід і помилки:
-
+```
 ls nonexistentfile &\> all1.txt
-
+```
 Усі результати виконання команди були записані у файл all1.txt.  
- ![][image16]
+<img width="660" height="29" alt="image" src="https://github.com/user-attachments/assets/f68d54a9-7f25-4cef-b891-1a03cc62dc74" />
+
 
 Також я використала інший спосіб об’єднання потоків:
-
+```
 ls nonexistentfile \> all2.txt 2\>&1
-
+```
 У цьому випадку стандартний вивід та помилки були записані у файл all2.txt.  
-![][image17]
+<img width="705" height="35" alt="image" src="https://github.com/user-attachments/assets/25527328-91d5-4ecb-afc7-a8daf816f280" />
+
 
 Далі я виконала аналогічну команду з дописуванням:
-
+```
 ls nonexistentfile \>\> all2.txt 2\>&1
-
+```
 Нові дані були додані до вже існуючого файлу.  
-![][image18]
+<img width="717" height="31" alt="image" src="https://github.com/user-attachments/assets/c9df9c03-170d-4065-ab7f-be0e17427248" />
+
 
 Особливу увагу я звернула на порядок перенаправлення:
-
+```
 ls nonexistentfile 2\>&1 \> /dev/null
-
+```
 У цьому випадку стандартний вивід було відправлено в /dev/null, а повідомлення про помилку залишилось у терміналі.  
-![][image19]
+<img width="713" height="55" alt="image" src="https://github.com/user-attachments/assets/73a26601-b914-46b8-a99b-3580fab4ae14" />
 
 Далі я виконала приховування помилок:
-
+```
 ls nonexistentfile 2\> /dev/null
-
+```
 У цьому випадку повідомлення про помилки не відображались.  
- (Скрін: відсутність помилки)
+ 
 
 Після цього я використала конвеєр (pipe):
-
+```
 ls | grep ".txt"
-
+```
 Результат виконання команди ls був переданий як вхід для grep, що дозволило відфільтрувати лише файли з розширенням .txt.  
-![][image20]
+<img width="712" height="253" alt="image" src="https://github.com/user-attachments/assets/def976ac-fe15-4985-9e09-477522d45ddf" />
+
 
 На завершення я об’єднала потоки та передала їх через pipe:
-
+```
 ls nonexistentfile 2\>&1 | grep "No such"
-
+```
 У цьому випадку і стандартний вивід, і помилки були передані в команду grep, яка відфільтрувала повідомлення про помилку.  
-![][image21]
+<img width="731" height="54" alt="image" src="https://github.com/user-attachments/assets/de8a980d-b46f-40d0-afe6-fdafd702923b" />
+
 
 | Команда | Що виконує команда (технічний опис) | Як я виконала цю команду (мої дії) |
 | :---- | :---- | :---- |
@@ -349,60 +370,66 @@ ls nonexistentfile 2\>&1 | grep "No such"
 **Завдання 5:**
 
 Спочатку я створила файл і записала в нього текст за допомогою команди:
-
+```
 echo "It is a new story." \> story
-
+```
 У результаті текст було записано у файл story, причому стандартний вивід був перенаправлений у файл.  
-![][image22]
+<img width="711" height="32" alt="image" src="https://github.com/user-attachments/assets/ba5dca73-e16f-43ec-8275-9879e30013c1" />
+
 
 Далі я записала поточну дату у файл:
-
+```
 date \> date.txt
-
+```
 Результат виконання команди було збережено у файл date.txt.  
-![][image23]
+<img width="466" height="41" alt="image" src="https://github.com/user-attachments/assets/ca15674f-52cd-43c7-bcda-14706da165f6" />
 
 Після цього я об’єднала вміст кількох файлів:
-
+```
 cat file1 file2 file3 \> bigfile
-
+```
 У результаті було створено файл bigfile, який містить об’єднаний вміст трьох файлів.  
- ![][image24]
+<img width="549" height="52" alt="image" src="https://github.com/user-attachments/assets/e17cbc09-5bfa-4435-a0aa-836ac1026827" />
+
 
 Далі я виконала допис результату команди у файл:
-
+```
 ls \-l \>\> directory
-
+```
 Інформація про файли була додана в кінець файлу directory без його перезапису.  
-![][image25]
+<img width="495" height="34" alt="image" src="https://github.com/user-attachments/assets/22505a8f-0667-462b-b997-4b5d86f9d6e7" />
+
 
 Після цього я виконала сортування даних із використанням перенаправлення вводу:
-
+```
 sort \< file1\_unsorted \> file2\_sorted
-
+```
 Вміст файлу file1\_unsorted було відсортовано і записано у файл file2\_sorted.  
-![][image26]
+<img width="662" height="50" alt="image" src="https://github.com/user-attachments/assets/94a04360-8223-4a89-8ec4-6cffbc508b91" />
+
 
 Далі я використала команду пошуку з розділенням потоків:
-
+```
 find \-name "\*.txt" \> file.txt 2\> /dev/null
-
+```
 Результати пошуку були записані у файл file.txt, а повідомлення про помилки були приховані.  
- ![][image27]
+<img width="709" height="35" alt="image" src="https://github.com/user-attachments/assets/5ca6e3ab-6af9-45e3-af1f-e75c75abffea" />
 
 Потім я використала конвеєр:
-
+```
 cat file1\_unsorted | sort \> file2\_sorted2
-
+```
 Вміст файлу було передано через pipe до команди сортування, після чого результат записано у файл.  
-![][image28]
+<img width="703" height="27" alt="image" src="https://github.com/user-attachments/assets/15f5ac4f-b58d-4e9d-840f-31247771a0f0" />
+
 
 На завершення я використала декілька команд у конвеєрі:
-
+```
 cat myfile | grep student | wc \-l
-
+```
 Було відфільтровано рядки зі словом "student" та підраховано їх кількість. У результаті отримано значення 3\.  
- ![][image29]
+<img width="707" height="77" alt="image" src="https://github.com/user-attachments/assets/5998912e-1cfc-440f-bfd8-9dd631e53e3b" />
+
 
 | Команда | Що виконує команда? | Який потік перенаправлення? |
 | :---- | :---- | :---- |
@@ -564,7 +591,7 @@ cat myfile | grep student | wc \-l
   * Перенаправлення непотрібного виводу в лог-файли. 
 
 1️⃣ Стиснення і розпакування файлу за допомогою lzop  
-![][image30]
+<img width="701" height="222" alt="image" src="https://github.com/user-attachments/assets/52353da1-3bec-414e-8359-92105aa535be" />
 
 **Що демонструє:**
 
@@ -575,7 +602,8 @@ cat myfile | grep student | wc \-l
 * Перегляд вмісту файлу
 
 2️⃣ Стиснення і розпакування файлу за допомогою zstd  
-![][image31]
+<img width="714" height="237" alt="image" src="https://github.com/user-attachments/assets/e4e04806-b6ca-431c-85cb-0797699e4e7b" />
+
 
 **Що демонструє:**
 
@@ -584,7 +612,8 @@ cat myfile | grep student | wc \-l
 * Розпакування та перегляд вмісту
 
 3️⃣ Архівування та стискання за допомогою tar \+ gzip  
-![][image32]
+<img width="690" height="278" alt="image" src="https://github.com/user-attachments/assets/b8cfdd6e-37c8-4105-99b8-92034e8d690e" />
+
 
 **Що демонструє:**
 
@@ -594,7 +623,8 @@ cat myfile | grep student | wc \-l
 * Розпакування та перевірку файлів
 
 4️⃣ Приклад використання /dev/null  
-![][image33]
+<img width="698" height="82" alt="image" src="https://github.com/user-attachments/assets/893dd08d-f891-430e-a34b-d37dad64a572" />
+
 
 **Що демонструє:**
 
